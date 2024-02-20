@@ -69,4 +69,6 @@ h6 {
 	--blackish-blue: hsl(219, 29%, 14%);
 	--light-gray: hsl(0, 0%, 81%);
 	--light-grayish-blue: hsl(210, 46%, 95%);
+	--medium-opacity-white: hsla(0, 0%, 100%, 70%);
+	--low-opacity-white: hsla(0, 0%, 100%, 50%);
 }
