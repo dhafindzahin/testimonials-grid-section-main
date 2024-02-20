@@ -1,5 +1,5 @@
 /*
-  1. Use a more-intuitive box-sizing model.
+1. Use a more-intuitive box-sizing model.
 */
 *,
 *::before,
@@ -59,4 +59,12 @@ h6 {
 #root,
 #__next {
 	isolation: isolate;
+}
+
+:root {
+	--violet: hsl(263, 55%, 52%);
+	--grayish-blue: hsl(217, 19%, 35%);
+	--blackish-blue: hsl(219, 29%, 14%);
+	--light-gray: hsl(0, 0%, 81%);
+	--light-grayish-blue: hsl(210, 46%, 95%);
 }
