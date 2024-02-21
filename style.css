@@ -79,6 +79,13 @@ h6 {
 	font-family: "Barlow Semi Condensed";
 }
 
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--light-grayish-blue);
+}
+
 .wrapper {
 	display: grid;
 	gap: 40px;
@@ -90,12 +97,14 @@ h6 {
 		"fourth"
 		"fifth";
 	padding: 64px 16px;
-	background-color: var(--light-grayish-blue);
+	max-width: 1440px;
+
 }
 
 .wrapper > div {
 	border-radius: 12px;
-	padding: 48px;
+	padding: 36px;
+	position: relative;
 }
 
 .first {
@@ -106,7 +115,6 @@ h6 {
 .second {
 	grid-area: second;
 	background-color: var(--grayish-blue);
-
 }
 
 .third {
@@ -130,15 +138,24 @@ h6 {
 	border: 2px var(--violet) solid;
 }
 
+img.quote {
+	border: none;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+}
+
 .profile {
 	display: flex;
-	gap: 24px;
-	margin-bottom: 18px;
+	gap: 12px;
+	margin-bottom: 16px;
+	font-size: 0.8rem;
+	align-items: center;
 }
 
 .profile > img {
 	border-radius: 100%;
-	width: 48px;
+	width: 36px;
 	height: fit-content;
 }
 
@@ -164,7 +181,10 @@ h6 {
 
 .card-text > h2 {
 	color: white;
-	margin-bottom: 18px;
+	margin-bottom: 16px;
+	z-index: 1;
+	position: relative;
+	font-size: 1.5rem;
 }
 
 .card-text > p {
@@ -187,5 +207,14 @@ h6 {
 			"first first second fifth"
 			"third fourth fourth fifth";
 		padding: 64px;
+	}
+
+	img.quote {
+		top: 0;
+		right: 125px;
+	}
+
+	.profile {
+		gap: 24px;
 	}
 }
