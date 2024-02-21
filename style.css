@@ -75,7 +75,7 @@ h6 {
 
 .wrapper {
 	display: grid;
-	gap: 48px;
+	gap: 40px;
 	grid-template-columns: 1fr;
 	grid-template-areas:
 		"first"
@@ -85,6 +85,11 @@ h6 {
 		"fifth";
 	padding: 64px 16px;
 	background-color: var(--light-grayish-blue);
+}
+
+.wrapper > div {
+	border-radius: 12px;
+	padding: 48px;
 }
 
 .first {
@@ -120,6 +125,5 @@ h6 {
 			"first first second fifth"
 			"third fourth fourth fifth";
 		padding: 64px;
-		align-items: center;
 	}
 }
