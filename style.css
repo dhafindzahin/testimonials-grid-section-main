@@ -75,7 +75,7 @@ h6 {
 
 .wrapper {
 	display: grid;
-	row-gap: 48px;
+	gap: 48px;
 	grid-template-columns: 1fr;
 	grid-template-areas:
 		"first"
@@ -87,22 +87,27 @@ h6 {
 
 .first {
 	grid-area: first;
+	background-color: var(--violet);
 }
 
 .second {
 	grid-area: second;
+	background-color: var(--grayish-blue);
 }
 
 .third {
 	grid-area: third;
+	background-color: white;
 }
 
 .fourth {
 	grid-area: fourth;
+	background-color: var(--blackish-blue);
 }
 
 .fifth {
 	grid-area: fifth;
+	background-color: white;
 }
 
 @media (min-width: 1024px) {
@@ -112,5 +117,6 @@ h6 {
 		grid-template-areas:
 			"first first second fifth"
 			"third fourth fourth fifth";
+		align-items: center;
 	}
 }
