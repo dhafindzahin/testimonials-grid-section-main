@@ -83,6 +83,8 @@ h6 {
 		"third"
 		"fourth"
 		"fifth";
+	padding: 64px 16px;
+	background-color: var(--light-grayish-blue);
 }
 
 .first {
@@ -117,6 +119,7 @@ h6 {
 		grid-template-areas:
 			"first first second fifth"
 			"third fourth fourth fifth";
+		padding: 64px;
 		align-items: center;
 	}
 }
