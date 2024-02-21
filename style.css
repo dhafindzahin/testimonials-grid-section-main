@@ -75,7 +75,34 @@ h6 {
 
 .wrapper {
 	display: grid;
-	gap: 48px;
+	row-gap: 48px;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"first"
+		"second"
+		"third"
+		"fourth"
+		"fifth";
+}
+
+.first {
+	grid-area: first;
+}
+
+.second {
+	grid-area: second;
+}
+
+.third {
+	grid-area: third;
+}
+
+.fourth {
+	grid-area: fourth;
+}
+
+.fifth {
+	grid-area: fifth;
 }
 
 @media (min-width: 1024px) {
@@ -85,25 +112,5 @@ h6 {
 		grid-template-areas:
 			"first first second fifth"
 			"third fourth fourth fifth";
-	}
-
-	.first {
-		grid-area: first;
-	}
-
-	.second {
-		grid-area: second;
-	}
-
-	.third {
-		grid-area: third;
-	}
-
-	.fourth {
-		grid-area: fourth;
-	}
-
-	.fifth {
-		grid-area: fifth;
 	}
 }
