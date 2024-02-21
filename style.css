@@ -71,6 +71,12 @@ h6 {
 	--light-grayish-blue: hsl(210, 46%, 95%);
 	--medium-opacity-white: hsla(0, 0%, 100%, 70%);
 	--low-opacity-white: hsla(0, 0%, 100%, 50%);
+	--medium-opacity-black: hsla(0, 0%, 0%, 70%);
+	--low-opacity-black: hsla(0, 0%, 0%, 50%);
+}
+
+* {
+	font-family: "Barlow Semi Condensed";
 }
 
 .wrapper {
@@ -100,11 +106,11 @@ h6 {
 .second {
 	grid-area: second;
 	background-color: var(--grayish-blue);
+
 }
 
 .third {
 	grid-area: third;
-	background-color: white;
 }
 
 .fourth {
@@ -114,7 +120,63 @@ h6 {
 
 .fifth {
 	grid-area: fifth;
+}
+
+.first img {
+	border: 2px hsl(263, 45%, 55%) solid;
+}
+
+.fourth img {
+	border: 2px var(--violet) solid;
+}
+
+.profile {
+	display: flex;
+	gap: 24px;
+	margin-bottom: 18px;
+}
+
+.profile > img {
+	border-radius: 100%;
+	width: 48px;
+	height: fit-content;
+}
+
+.profile-text > p:first-child {
+	color: white;
+}
+
+.profile-text > p:last-child {
+	color: var(--medium-opacity-white);
+}
+
+.white-card {
 	background-color: white;
+}
+
+.white-card .profile-text > p:first-child {
+	color: black;
+}
+
+.white-card .profile-text > p:last-child {
+	color: var(--medium-opacity-black);
+}
+
+.card-text > h2 {
+	color: white;
+	margin-bottom: 18px;
+}
+
+.card-text > p {
+	color: var(--medium-opacity-white);
+}
+
+.white-card .card-text > h2 {
+	color: black;
+}
+
+.white-card .card-text > p {
+	color: var(--medium-opacity-black);
 }
 
 @media (min-width: 1024px) {
